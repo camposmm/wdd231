@@ -1,3 +1,20 @@
+// Get the current year
+const currentYear = new Date().getFullYear();
+document.getElementById('currentyear').textContent = currentYear;
+
+// Get the last modified date
+document.getElementById('lastModified').textContent = document.lastModified;
+
+// Mobile Menu Toggle
+document.addEventListener("DOMContentLoaded", function() {
+    const menuButton = document.getElementById("menu-button");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuButton.addEventListener("click", function() {
+        navMenu.style.display = (navMenu.style.display === "flex") ? "none" : "flex";
+    });
+});
+
 const courses = [
     { code: "CSE 110", name: "Programming Building Blocks", credits: 2, completed: true },
     { code: "WDD 130", name: "Web Fundamentals", credits: 2, completed: true },
@@ -14,7 +31,7 @@ function displayCourses(filter = "all") {
     courseList.innerHTML = "";
     const filteredCourses = filter === "all" ? courses : courses.filter(course => course.code.startsWith(filter.toUpperCase()));
     filteredCourses.forEach(course => {
-        const card = document.createElement("div");
+        const card = document.createElement("li");
         card.classList.add("course-card");
         if (course.completed) card.classList.add("completed");
         card.innerHTML = `
@@ -28,7 +45,7 @@ function displayCourses(filter = "all") {
 
 filterButtons.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
-        displayCourses(e.target.id);
+        displayCourses(e.target.textContent);
     }
 });
 
