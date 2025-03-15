@@ -1,58 +1,58 @@
 [
-    {
-      "name": "Company A",
-      "address": "123 Main St, City, State, ZIP",
-      "phone": "123-456-7890",
-      "website": "https://companyA.com",
-      "image": "companyA.jpg",
-      "membershipLevel": 3
-    },
-    {
-      "name": "Company B",
-      "address": "456 Elm St, City, State, ZIP",
-      "phone": "234-567-8901",
-      "website": "https://companyB.com",
-      "image": "companyB.jpg",
-      "membershipLevel": 2
-    },
-    {
-      "name": "Company C",
-      "address": "789 Oak St, City, State, ZIP",
-      "phone": "345-678-9012",
-      "website": "https://companyC.com",
-      "image": "companyC.jpg",
-      "membershipLevel": 1
-    },
-    {
-      "name": "Company D",
-      "address": "101 Pine St, City, State, ZIP",
-      "phone": "456-789-0123",
-      "website": "https://companyD.com",
-      "image": "companyD.jpg",
-      "membershipLevel": 3
-    },
-    {
-      "name": "Company E",
-      "address": "202 Maple St, City, State, ZIP",
-      "phone": "567-890-1234",
-      "website": "https://companyE.com",
-      "image": "companyE.jpg",
-      "membershipLevel": 2
-    },
-    {
-      "name": "Company F",
-      "address": "303 Cedar St, City, State, ZIP",
-      "phone": "678-901-2345",
-      "website": "https://companyF.com",
-      "image": "companyF.jpg",
-      "membershipLevel": 1
-    },
-    {
-      "name": "Company G",
-      "address": "404 Birch St, City, State, ZIP",
-      "phone": "789-012-3456",
-      "website": "https://companyG.com",
-      "image": "companyG.jpg",
-      "membershipLevel": 3
-    }
-  ]
+  {
+    "name": "Americanas",
+    "address": "123 Main St, City, State, ZIP",
+    "phone": "123-456-7890",
+    "website": "https://americanas.com",
+    "image": "companyA.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Magazineluiza",
+    "address": "456 Elm St, City, State, ZIP",
+    "phone": "234-567-8901",
+    "website": "https://magazineluiza.com",
+    "image": "companyB.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Saraiva",
+    "address": "789 Oak St, City, State, ZIP",
+    "phone": "345-678-9012",
+    "website": "https://editorasaraiva.com",
+    "image": "companyC.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Casas Bahia",
+    "address": "101 Pine St, City, State, ZIP",
+    "phone": "456-789-0123",
+    "website": "https://casasbahia.com",
+    "image": "companyD.jpg",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Le Biscuit",
+    "address": "202 Maple St, City, State, ZIP",
+    "phone": "567-890-1234",
+    "website": "https://lebiscuit.com",
+    "image": "companyE.jpg",
+    "membershipLevel": 2
+  },
+  {
+    "name": "C&A",
+    "address": "303 Cedar St, City, State, ZIP",
+    "phone": "678-901-2345",
+    "website": "https://cea.com.br",
+    "image": "companyF.jpg",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Zara",
+    "address": "404 Birch St, City, State, ZIP",
+    "phone": "789-012-3456",
+    "website": "https://zara.com",
+    "image": "companyG.jpg",
+    "membershipLevel": 3
+  }
+]
