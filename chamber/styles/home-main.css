@@ -99,12 +99,13 @@
   }
   
   main h1 {
+    background-color: green;
     font-size: 2rem;
-    color: var(--primary-color);
+    color: black;
     text-align: center;
     margin-bottom: 1rem;
   }
-  
+
   /* Hero Section */
   .hero {
     position: relative;
