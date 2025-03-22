@@ -1,0 +1,198 @@
+{
+    "chamberInfo": {
+      "name": "City Chamber of Commerce",
+      "address": "123 Main Street, City, State 12345",
+      "phone": "(555) 123-4567",
+      "email": "info@citychamber.org",
+      "socialMedia": {
+        "facebook": "https://facebook.com/citychamber",
+        "twitter": "https://twitter.com/citychamber",
+        "linkedin": "https://linkedin.com/company/citychamber"
+      }
+    },
+    "members": [
+        [
+            {
+              "name": "Americanas",
+              "address": "123 Main St, City, State, ZIP",
+              "phone": "123-456-7890",
+              "website": "https://americanas.com",
+              "image": "companyA.jpg",
+              "membershipLevel": 3
+            },
+            {
+              "name": "Magazineluiza",
+              "address": "456 Elm St, City, State, ZIP",
+              "phone": "234-567-8901",
+              "website": "https://magazineluiza.com",
+              "image": "companyB.jpg",
+              "membershipLevel": 2
+            },
+            {
+              "name": "Saraiva",
+              "address": "789 Oak St, City, State, ZIP",
+              "phone": "345-678-9012",
+              "website": "https://editorasaraiva.com",
+              "image": "companyC.jpg",
+              "membershipLevel": 1
+            },
+            {
+              "name": "Casas Bahia",
+              "address": "101 Pine St, City, State, ZIP",
+              "phone": "456-789-0123",
+              "website": "https://casasbahia.com",
+              "image": "companyD.jpg",
+              "membershipLevel": 3
+            },
+            {
+              "name": "Le Biscuit",
+              "address": "202 Maple St, City, State, ZIP",
+              "phone": "567-890-1234",
+              "website": "https://lebiscuit.com",
+              "image": "companyE.jpg",
+              "membershipLevel": 2
+            },
+            {
+              "name": "C&A",
+              "address": "303 Cedar St, City, State, ZIP",
+              "phone": "678-901-2345",
+              "website": "https://cea.com.br",
+              "image": "companyF.jpg",
+              "membershipLevel": 1
+            },
+            {
+              "name": "Zara",
+              "address": "404 Birch St, City, State, ZIP",
+              "phone": "789-012-3456",
+              "website": "https://zara.com",
+              "image": "companyG.jpg",
+              "membershipLevel": 3
+            }
+          ]
+    ],
+    "events": [
+      {
+        "id": 1,
+        "title": "Business Networking Breakfast",
+        "date": "2023-06-15T08:00:00",
+        "endDate": "2023-06-15T10:00:00",
+        "location": "City Hall Conference Room",
+        "address": "100 City Hall Plaza, City, State 12345",
+        "description": "Join us for our monthly networking breakfast. Meet other business owners and entrepreneurs in our community while enjoying a delicious breakfast.",
+        "price": 15.00,
+        "registrationRequired": true,
+        "registrationLink": "https://example.com/events/1/register",
+        "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "id": 2,
+        "title": "Small Business Workshop Series",
+        "date": "2023-06-22T09:00:00",
+        "endDate": "2023-06-22T12:00:00",
+        "location": "Chamber Conference Room",
+        "address": "123 Main Street, City, State 12345",
+        "description": "Learn essential skills for growing your small business in our hands-on workshop series. This month's topic: Digital Marketing Strategies.",
+        "price": 25.00,
+        "registrationRequired": true,
+        "registrationLink": "https://example.com/events/2/register",
+        "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "id": 3,
+        "title": "Annual Chamber Gala",
+        "date": "2023-07-15T18:00:00",
+        "endDate": "2023-07-15T22:00:00",
+        "location": "Grand Ballroom, City Hotel",
+        "address": "555 Hotel Ave, City, State 12345",
+        "description": "Join us for an evening of celebration as we recognize outstanding businesses in our community. Dinner, awards, and entertainment included.",
+        "price": 75.00,
+        "registrationRequired": true,
+        "registrationLink": "https://example.com/events/3/register",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+      }
+    ],
+    "membershipLevels": [
+      {
+        "level": "bronze",
+        "price": 300,
+        "period": "yearly",
+        "benefits": [
+          "Business listing in online directory",
+          "Chamber newsletter subscription",
+          "Attendance at member-only events"
+        ]
+      },
+      {
+        "level": "silver",
+        "price": 600,
+        "period": "yearly",
+        "benefits": [
+          "All Bronze level benefits",
+          "Featured listing in online directory",
+          "Social media promotion (1 per quarter)",
+          "Discounted event tickets"
+        ]
+      },
+      {
+        "level": "gold",
+        "price": 1200,
+        "period": "yearly",
+        "benefits": [
+          "All Silver level benefits",
+          "Premium listing in online directory with logo",
+          "Featured spotlight on chamber homepage",
+          "Social media promotion (1 per month)",
+          "One free ticket to Annual Chamber Gala"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "id": 1,
+        "title": "New Businesses Join the Chamber",
+        "date": "2023-05-20",
+        "summary": "We're excited to welcome five new businesses to our Chamber this month!",
+        "content": "The City Chamber of Commerce is pleased to announce the addition of five new business members this month. These diverse businesses represent various sectors including retail, technology, and professional services. We look forward to supporting their growth and success in our community.",
+        "image": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+      },
+      {
+        "id": 2,
+        "title": "Chamber's Annual Economic Forecast",
+        "date": "2023-05-10",
+        "summary": "Local economists predict strong growth for our region in the coming year.",
+        "content": "At our recent Economic Forecast Luncheon, regional economists shared optimistic projections for our local economy. Key sectors expected to see growth include technology, healthcare, and construction. The full report is available to chamber members through our online portal.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+      }
+    ],
+    "localWeather": {
+      "location": "City, State",
+      "current": {
+        "temp": 72,
+        "conditions": "Partly Cloudy",
+        "icon": "04d",
+        "humidity": 45,
+        "windSpeed": 8
+      },
+      "forecast": [
+        {
+          "day": "Tomorrow",
+          "temp": 75,
+          "conditions": "Sunny",
+          "icon": "01d"
+        },
+        {
+          "day": "Wednesday",
+          "temp": 78,
+          "conditions": "Clear",
+          "icon": "01d"
+        },
+        {
+          "day": "Thursday",
+          "temp": 71,
+          "conditions": "Light Rain",
+          "icon": "10d"
+        }
+      ]
+    }
+  }
+  
