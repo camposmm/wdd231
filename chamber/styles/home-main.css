@@ -98,6 +98,13 @@
     color: #007bff;
   }
   
+  main h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
   /* Hero Section */
   .hero {
     position: relative;
