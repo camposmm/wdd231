@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marcos Murilo Campos">
+  <meta property="og:title" content="Join Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://camposmm.github.io/wdd231/chamber/images/logo.png">
+  <meta property="og:url" content="https://camposmm.github.io/wdd231/chamber/join.html">
+  <title>Join Chamber of Commerce</title>
+  <meta name="description" content="Join our Chamber of Commerce to grow your business">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Chamber Logo" class="logo">
+    </div>
+    <nav>
+      <button class="menu-toggle" id="menuToggle">Menu</button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber of Commerce</h1>
+    
+    <div class="join-container">
+      <form id="joinForm" method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label>
+            First Name* <input type="text" name="firstName" required autocomplete="given-name" title="Please enter your first name">
+          </label>
+          <label>
+            Last Name* <input type="text" name="lastName" required autocomplete="family-name" title="Please enter your last name">
+          </label>
+          <label>
+            Title/Position <input type="text" name="title" autocomplete="organization-title" 
+            pattern="[A-Za-z \-]{7,}" title="Only letters, hyphens, and spaces with minimum of 7 characters">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label>
+            Email* <input type="email" name="email" required autocomplete="email" 
+            placeholder="example@domain.com" title="Please enter a valid email address">
+          </label>
+          <label>
+            Mobile Phone* <input type="tel" name="phone" required autocomplete="tel" title="Please enter your phone number">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Business Information</legend>
+          <label>
+            Business/Organization Name* <input type="text" name="business" required autocomplete="organization" title="Please enter your business name">
+          </label>
+          <label>
+            Membership Level
+            <select name="membership" required>
+              <option value="">Select a level...</option>
+              <option value="np">NP Membership (Non-Profit)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+          <label>
+            Business Description
+            <textarea name="description" title="Tell us about your business"></textarea>
+          </label>
+        </fieldset>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+        <button type="submit">Join the Chamber</button>
+      </form>
+
+      <div class="membership-cards">
+        <div class="card np-card">
+          <h3>NP Membership</h3>
+          <p>For non-profit organizations</p>
+          <p>No fee</p>
+          <button class="info-btn" data-modal="np-modal">Learn More</button>
+        </div>
+        
+        <div class="card bronze-card">
+          <h3>Bronze Membership</h3>
+          <p>$300/year</p>
+          <button class="info-btn" data-modal="bronze-modal">Learn More</button>
+        </div>
+        
+        <div class="card silver-card">
+          <h3>Silver Membership</h3>
+          <p>$600/year</p>
+          <button class="info-btn" data-modal="silver-modal">Learn More</button>
+        </div>
+        
+        <div class="card gold-card">
+          <h3>Gold Membership</h3>
+          <p>$1200/year</p>
+          <button class="info-btn" data-modal="gold-modal">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Membership Modals -->
+    <div id="np-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>NP Membership Benefits</h2>
+        <ul>
+          <li>Business listing in online directory</li>
+          <li>Access to member resources</li>
+          <li>Participation in chamber events</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Bronze Membership Benefits</h2>
+        <ul>
+          <li>Business listing in online directory</li>
+          <li>Chamber newsletter subscription</li>
+          <li>Attendance at member-only events</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Silver Membership Benefits</h2>
+        <ul>
+          <li>All Bronze level benefits</li>
+          <li>Featured listing in online directory</li>
+          <li>Social media promotion (1 per quarter)</li>
+          <li>Discounted event tickets</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Gold Membership Benefits</h2>
+        <ul>
+          <li>All Silver level benefits</li>
+          <li>Premium listing in online directory with logo</li>
+          <li>Featured spotlight on chamber homepage</li>
+          <li>Social media promotion (1 per month)</li>
+          <li>One free ticket to Annual Chamber Gala</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <h3>City Chamber of Commerce</h3>
+      <p>123 Main Street, City, State 12345</p>
+    </div>
+    <div class="footer-contact">
+      <p>info@citychamber.org</p>
+      <p>(555) 123-4567</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="copyright-year"></span> Chamber of Commerce</p>
+      <p>Marcos Murilo Campos | WDD 231</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

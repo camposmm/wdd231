@@ -1,0 +1,55 @@
+/* Thank You Page Styles */
+.thankyou-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .thankyou-message {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .thankyou-message h2 {
+    color: #23b38a;
+    margin-bottom: 1.5rem;
+  }
+  
+  .submitted-info {
+    text-align: left;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+  }
+  
+  .submitted-info p {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .submitted-info p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .return-home {
+    display: inline-block;
+    background-color: #23b38a;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .return-home:hover {
+    background-color: #1a8c6e;
+  }

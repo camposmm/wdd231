@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marcos Murilo Campos">
+  <meta property="og:title" content="Thank You for Joining">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://camposmm.github.io/wdd231/chamber/images/logo.png">
+  <meta property="og:url" content="https://camposmm.github.io/wdd231/chamber/thankyou.html">
+  <title>Thank You for Joining</title>
+  <meta name="description" content="Thank you for joining our Chamber of Commerce">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/thankyou.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Chamber Logo" class="logo">
+    </div>
+    <nav>
+      <button class="menu-toggle" id="menuToggle">Menu</button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Joining!</h1>
+    <div class="thankyou-container">
+      <div class="thankyou-message">
+        <h2>Welcome to the Chamber of Commerce</h2>
+        <p>We're excited to have you as a member. Here's the information you submitted:</p>
+        
+        <div class="submitted-info">
+          <p><strong>Name:</strong> <span id="display-name"></span></p>
+          <p><strong>Email:</strong> <span id="display-email"></span></p>
+          <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+          <p><strong>Business:</strong> <span id="display-business"></span></p>
+          <p><strong>Membership Level:</strong> <span id="display-membership"></span></p>
+          <p><strong>Application Date:</strong> <span id="display-date"></span></p>
+        </div>
+        
+        <p>A welcome email has been sent to your email address with more information about your membership.</p>
+        <a href="index.html" class="return-home">Return to Home Page</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <h3>City Chamber of Commerce</h3>
+      <p>123 Main Street, City, State 12345</p>
+    </div>
+    <div class="footer-contact">
+      <p>info@citychamber.org</p>
+      <p>(555) 123-4567</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="copyright-year"></span> Chamber of Commerce</p>
+      <p>Marcos Murilo Campos | WDD 231</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/thankyou.js"></script>
+</body>
+</html>
