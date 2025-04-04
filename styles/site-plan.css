@@ -1,0 +1,131 @@
+/* Color Schema */
+:root {
+    --primary-color: #4a7c59; /* Green */
+    --secondary-color: #f8f4e3; /* Cream */
+    --accent-color: #d88c9a; /* Pink */
+    --text-color: #333;
+    --light-text: #f8f9fa;
+    --background-color: #ffffff;
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.heading-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.body-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Layout */
+header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--light-text);
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Color Palette Display */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--text-color);
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.color-box.primary {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+.color-box.secondary {
+    background-color: var(--secondary-color);
+}
+
+.color-box.accent {
+    background-color: var(--accent-color);
+    color: var(--light-text);
+}
+
+.color-box.text {
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+}
+
+/* Typography Display */
+.font-sample {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+/* Wireframe Display */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.wireframe img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .color-palette {
+        grid-template-columns: 1fr;
+    }
+    
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+}
