@@ -1,0 +1,60 @@
+{
+    "attractions": [
+      {
+        "id": 1,
+        "name": "City Park",
+        "image": "images/park.webp",
+        "address": "100 Park Avenue, City, State",
+        "description": "Our beautiful 50-acre city park features walking trails, playgrounds, picnic areas, and a scenic lake perfect for family outings and relaxation."
+      },
+      {
+        "id": 2,
+        "name": "Downtown Plaza",
+        "image": "images/plaza.webp",
+        "address": "200 Main Street, City, State",
+        "description": "The heart of our city with shops, restaurants, and frequent community events including concerts and farmers markets."
+      },
+      {
+        "id": 3,
+        "name": "Historical Museum",
+        "image": "images/museum.webp",
+        "address": "300 History Lane, City, State",
+        "description": "Explore our city's rich history through interactive exhibits and artifacts dating back to the 1800s."
+      },
+      {
+        "id": 4,
+        "name": "Riverwalk Trail",
+        "image": "images/riverwalk.webp",
+        "address": "400 Riverside Drive, City, State",
+        "description": "A 5-mile paved trail along the river perfect for walking, running, and biking with beautiful views."
+      },
+      {
+        "id": 5,
+        "name": "Science Center",
+        "image": "images/science.webp",
+        "address": "500 Innovation Way, City, State",
+        "description": "Interactive science exhibits and planetarium shows that make learning fun for all ages."
+      },
+      {
+        "id": 6,
+        "name": "Botanical Gardens",
+        "image": "images/gardens.webp",
+        "address": "600 Flora Street, City, State",
+        "description": "Stunning gardens featuring native plants, exotic flowers, and themed gardens across 30 acres."
+      },
+      {
+        "id": 7,
+        "name": "Performing Arts Center",
+        "image": "images/arts.webp",
+        "address": "700 Culture Avenue, City, State",
+        "description": "Hosting Broadway shows, symphony performances, and local theater productions throughout the year."
+      },
+      {
+        "id": 8,
+        "name": "Sports Complex",
+        "image": "images/sports.webp",
+        "address": "800 Victory Lane, City, State",
+        "description": "State-of-the-art facilities for baseball, soccer, tennis, and swimming with programs for all ages."
+      }
+    ]
+  }

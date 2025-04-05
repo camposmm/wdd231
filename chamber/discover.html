@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marcos Murilo Campos">
+  <meta property="og:title" content="Chamber Discover Page">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://camposmm.github.io/wdd231/chamber/images/logo.png">
+  <meta property="og:url" content="https://camposmm.github.io/wdd231/chamber/discover.html">
+  <title>Discover Our City | Chamber of Commerce</title>
+  <meta name="description" content="Discover the best attractions and features of our city through the Chamber of Commerce">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/discover.css">
+  <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Chamber Logo" class="logo">
+    </div>
+    <nav>
+      <button class="menu-toggle" id="menuToggle">Menu</button>
+      <ul id="primaryNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="discover-main">
+    <h1>Discover Our City</h1>
+    
+    <div class="sidebar">
+      <div class="visitor-info">
+        <h2>Visitor Information</h2>
+        <div id="visit-message"></div>
+      </div>
+      <div class="demographics">
+        <h2>City Demographics</h2>
+        <p>Population: 250,000</p>
+        <p>Median Age: 34</p>
+        <p>Median Household Income: $65,000</p>
+        <p>Businesses: 5,200+</p>
+      </div>
+    </div>
+
+    <div class="discover-grid" id="discoverGrid">
+      <!-- Cards will be populated by JavaScript from JSON -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+        <h3>City Chamber of Commerce</h3>
+        <p>123 Main Street, City, State 12345</p>
+      </div>
+      <div class="footer-contact">
+        <p>info@citychamber.org</p>
+        <p>(555) 123-4567</p>
+        </div>
+    <div class="footer-bottom">
+            <p>&copy; <span id="copyright-year"></span> Chamber of Commerce</p>
+            <p>Marcos Murilo Campos | WDD 231</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
