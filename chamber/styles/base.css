@@ -13,9 +13,9 @@ body {
 }
 
 img {
-    width: 100%; /* or max-width: 100%; */
+    width: 100%;
     height: auto;
-  }
+}
 
 a {
     text-decoration: none;
@@ -28,7 +28,7 @@ ul {
 
 /* Header Styles */
 header {
-    background-color: #23b38a;
+    background-color: #1a8c6e; /* Changed from #23b38a to darker green */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 1rem;
     display: flex;
@@ -95,7 +95,7 @@ nav ul li a.active {
 
 /* Main Content Styles */
 main h1 {
-    background-color: #23b38a;
+    background-color: #1a8c6e; /* Changed from #23b38a to darker green */
     font-size: 2rem;
     color: #fff;
     text-align: center;
@@ -126,6 +126,12 @@ footer {
     padding-top: 2rem;
     border-top: 1px solid rgba(255,255,255,0.1);
     font-size: 0.9rem;
+}
+
+/* Focus states for accessibility */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 2px solid #1a8c6e;
+    outline-offset: 2px;
 }
 
 /* Responsive Styles */
