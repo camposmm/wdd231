@@ -1,0 +1,62 @@
+/* Medium screens (641px to 1024px) */
+@media (min-width: 641px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+  
+    .logo-container {
+      margin-bottom: 0;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      margin-top: 0;
+    }
+  
+    nav ul li a {
+      padding: 0.5rem 1rem;
+      color: #333;
+    }
+  
+    /* Discover page specific */
+    .discover-main {
+      grid-template-columns: 1fr;
+    }
+  
+    .discover-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+  }
+  
+  /* Large screens (1025px and above) */
+  @media (min-width: 1025px) {
+    .discover-main {
+      grid-template-columns: 300px 1fr;
+    }
+  
+    .discover-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6"
+        "card7 card8 .";
+    }
+  
+    /* Header adjustments */
+    nav ul li a {
+      padding: 0.5rem 1.5rem;
+    }
+  }
