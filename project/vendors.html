@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcos Murilo Campos">
+    <title>Vendor Directory | Fresh Harvest Farmers' Market</title>
+    <meta name="description" content="Browse our local vendors offering fresh produce, baked goods, crafts and more">
+    <link rel="stylesheet" href="styles/farm.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Fresh Harvest Farmers' Market Logo" width="100" height="100">
+            <h1>Fresh Harvest Farmers' Market</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="vendors.html">Vendors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="vendor-directory">
+            <h2>Vendor Directory</h2>
+            
+            <div class="search-filter">
+                <input type="text" id="vendorSearch" placeholder="Search vendors..." aria-label="Search vendors">
+                <select id="categoryFilter" aria-label="Filter by category">
+                    <option value="all">All Categories</option>
+                    <option value="produce">Produce</option>
+                    <option value="baked-goods">Baked Goods</option>
+                    <option value="dairy">Dairy & Eggs</option>
+                    <option value="meat">Meat & Poultry</option>
+                    <option value="crafts">Crafts</option>
+                    <option value="prepared">Prepared Foods</option>
+                </select>
+            </div>
+            
+            <div id="loading" class="loading">Loading vendors...</div>
+            <div id="vendor-container" class="vendor-grid">
+                <!-- Vendors will be inserted here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Market Hours</h3>
+                <p>Saturday: 8am - 2pm</p>
+                <p>May through October</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook icon" width="24" height="24"></a>
+                    <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram icon" width="24" height="24"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter icon" width="24" height="24"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fresh Harvest Farmers' Market | Marcos Murilo Campos</p>
+            <p><a href="attributions.html">Resource Attributions</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/vendors.js"></script>
+</body>
+</html>

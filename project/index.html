@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Local farmers' market information hub featuring vendors, events, and seasonal produce">
+    <meta name="author" content="Marcos Murilo Campos">
+    <title>Fresh Harvest Farmers' Market | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/farm.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="Fresh Harvest Farmers' Market">
+    <meta property="og:description" content="Support local agriculture at our weekly farmers' market">
+    <meta property="og:image" content="images/market-banner.jpg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Fresh Harvest Farmers' Market Logo" width="100" height="100">
+            <h1>Fresh Harvest Farmers' Market</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/market-banner-large.jpg">
+                <img src="images/market-banner-small.jpg" alt="Farmers' market with colorful produce stands" loading="lazy">
+            </picture>
+            <div class="hero-text">
+                <h2>Fresh. Local. Sustainable.</h2>
+                <p>Every Saturday from 8am to 2pm</p>
+            </div>
+        </section>
+
+        <section class="market-info">
+            <h2>About Our Market</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Location</h3>
+                    <p>123 Main Street, Downtown Plaza</p>
+                </div>
+                <div class="info-card">
+                    <h3>Hours</h3>
+                    <p>Saturday: 8am - 2pm<br>May through October</p>
+                </div>
+                <div class="info-card">
+                    <h3>This Week's Highlights</h3>
+                    <p id="seasonal-highlights">Loading seasonal produce...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-vendors">
+            <h2>Featured Vendors</h2>
+            <div class="vendor-grid" id="featured-vendors">
+                <!-- Dynamically loaded from JSON -->
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="event-list" id="featured-events">
+                <!-- Dynamically loaded from JSON -->
+            </div>
+            <a href="events.html" class="btn">View Full Calendar</a>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="marketForm" action="form-action.html" method="get">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a topic</option>
+                        <option value="vendor">Vendor Application</option>
+                        <option value="question">General Question</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="event">Event Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Market Hours</h3>
+                <p>Saturday: 8am - 2pm</p>
+                <p>May through October</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook icon" width="24" height="24"></a>
+                    <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram icon" width="24" height="24"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter icon" width="24" height="24"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fresh Harvest Farmers' Market | Marcos Murilo Campos</p>
+            <p><a href="attributions.html">Resource Attributions</a></p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

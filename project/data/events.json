@@ -1,0 +1,158 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "Farm-to-Table Cooking Demo",
+            "description": "Learn how to prepare seasonal produce with local chef Maria Gonzalez. Watch as she creates delicious dishes using ingredients available at the market this week. Samples will be provided!",
+            "date": "2023-06-10",
+            "time": "10:00 AM",
+            "location": "Market Center Stage",
+            "category": "workshop",
+            "image": "cooking-demo.jpg",
+            "featured": true
+        },
+        {
+            "id": 2,
+            "title": "Beekeeping Workshop",
+            "description": "Local beekeeper Tom Wilson shares the basics of backyard beekeeping. Learn about the importance of pollinators and how you can help support local bee populations.",
+            "date": "2023-06-17",
+            "time": "11:00 AM",
+            "location": "Education Tent",
+            "category": "workshop",
+            "image": "beekeeping.jpg",
+            "featured": true
+        },
+        {
+            "id": 3,
+            "title": "Kids' Planting Activity",
+            "description": "Children can plant their own sunflower to take home and watch grow throughout the summer. All materials provided. Suitable for ages 3-10.",
+            "date": "2023-06-24",
+            "time": "9:30 AM",
+            "location": "Kids' Corner",
+            "category": "activity",
+            "image": "kids-planting.jpg",
+            "featured": false
+        },
+        {
+            "id": 4,
+            "title": "Composting 101",
+            "description": "Learn how to turn your kitchen scraps into garden gold! This workshop covers the basics of home composting and how to troubleshoot common problems.",
+            "date": "2023-07-08",
+            "time": "10:30 AM",
+            "location": "Education Tent",
+            "category": "workshop",
+            "image": "composting.jpg",
+            "featured": true
+        },
+        {
+            "id": 5,
+            "title": "Live Music: The Harvest Tones",
+            "description": "Enjoy bluegrass and folk music from this popular local band while you shop the market. Playing from 10am to 1pm.",
+            "date": "2023-07-15",
+            "time": "10:00 AM",
+            "location": "Market Center Stage",
+            "category": "entertainment",
+            "image": "live-music.jpg",
+            "featured": false
+        },
+        {
+            "id": 6,
+            "title": "Canning and Preserving Workshop",
+            "description": "Learn how to safely preserve your summer harvest with this hands-on workshop. We'll demonstrate water bath canning for jams and pickles.",
+            "date": "2023-07-22",
+            "time": "11:00 AM",
+            "location": "Education Tent",
+            "category": "workshop",
+            "image": "canning.jpg",
+            "featured": false
+        },
+        {
+            "id": 7,
+            "title": "Farmers' Market Breakfast",
+            "description": "Join us for a special breakfast featuring dishes made entirely from market ingredients. Tickets required ($15). Proceeds benefit the market's education programs.",
+            "date": "2023-08-05",
+            "time": "8:30 AM",
+            "location": "Community Tent",
+            "category": "special",
+            "image": "market-breakfast.jpg",
+            "featured": true
+        },
+        {
+            "id": 8,
+            "title": "Herb Gardening for Small Spaces",
+            "description": "Even if you only have a windowsill, you can grow fresh herbs! This workshop covers container selection, soil mixes, and care for common culinary herbs.",
+            "date": "2023-08-12",
+            "time": "10:00 AM",
+            "location": "Education Tent",
+            "category": "workshop",
+            "image": "herb-gardening.jpg",
+            "featured": false
+        },
+        {
+            "id": 9,
+            "title": "Tomato Tasting",
+            "description": "Sample and vote for your favorite heirloom tomato varieties grown by our market farmers. Discover new flavors for your garden!",
+            "date": "2023-08-19",
+            "time": "10:00 AM",
+            "location": "Market Center Stage",
+            "category": "special",
+            "image": "tomato-tasting.jpg",
+            "featured": false
+        },
+        {
+            "id": 10,
+            "title": "Cheese Making Demo",
+            "description": "Watch as the cheesemakers from Mountain View Cheese demonstrate how fresh cheese is made. Samples will be available.",
+            "date": "2023-08-26",
+            "time": "11:30 AM",
+            "location": "Education Tent",
+            "category": "workshop",
+            "image": "cheese-making.jpg",
+            "featured": false
+        },
+        {
+            "id": 11,
+            "title": "Fall Planting Workshop",
+            "description": "Learn which vegetables you can plant now for a fall harvest. Includes tips for extending your growing season with cold frames and row covers.",
+            "date": "2023-09-09",
+            "time": "10:00 AM",
+            "location": "Education Tent",
+            "category": "workshop",
+            "image": "fall-planting.jpg",
+            "featured": false
+        },
+        {
+            "id": 12,
+            "title": "Apple Pressing Demo",
+            "description": "See how fresh cider is made using a traditional press. Bring your own apples to press (or just watch).",
+            "date": "2023-09-16",
+            "time": "10:00 AM",
+            "location": "Market Center Stage",
+            "category": "demo",
+            "image": "apple-pressing.jpg",
+            "featured": false
+        },
+        {
+            "id": 13,
+            "title": "Pumpkin Decorating",
+            "description": "Kids can decorate a small pumpkin to take home. Pumpkins and decorating supplies provided. First come, first served while supplies last.",
+            "date": "2023-10-14",
+            "time": "10:00 AM",
+            "location": "Kids' Corner",
+            "category": "activity",
+            "image": "pumpkin-decorating.jpg",
+            "featured": false
+        },
+        {
+            "id": 14,
+            "title": "Season Closing Celebration",
+            "description": "Join us for our final market day of the season with live music, special activities, and a thank you to all our vendors and customers.",
+            "date": "2023-10-28",
+            "time": "9:00 AM",
+            "location": "Throughout Market",
+            "category": "special",
+            "image": "closing-celebration.jpg",
+            "featured": true
+        }
+    ]
+}

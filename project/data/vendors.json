@@ -1,0 +1,169 @@
+{
+    "vendors": [
+        {
+            "id": 1,
+            "name": "Green Valley Farms",
+            "category": "produce",
+            "description": "Organic fruits and vegetables grown with sustainable practices since 2010. Our family farm specializes in heirloom varieties and seasonal favorites.",
+            "image": "green-valley.jpg",
+            "featured": true,
+            "products": ["Apples", "Tomatoes", "Lettuce", "Carrots", "Kale", "Beets"],
+            "since": 2010,
+            "website": null
+        },
+        {
+            "id": 2,
+            "name": "Sunny Acres Honey",
+            "category": "prepared",
+            "description": "Local raw honey from our own beehives. We offer a variety of flavors based on seasonal blooms.",
+            "image": "sunny-acres.jpg",
+            "featured": true,
+            "products": ["Wildflower Honey", "Clover Honey", "Honey Comb", "Beeswax Candles"],
+            "since": 2015,
+            "website": null
+        },
+        {
+            "id": 3,
+            "name": "Bountiful Breads",
+            "category": "baked-goods",
+            "description": "Artisanal breads baked fresh daily using locally milled flour and natural leavening.",
+            "image": "bountiful-breads.jpg",
+            "featured": true,
+            "products": ["Sourdough", "Whole Wheat", "Rye", "Baguettes", "Pastries"],
+            "since": 2018,
+            "website": null
+        },
+        {
+            "id": 4,
+            "name": "Happy Hen Eggs",
+            "category": "dairy",
+            "description": "Free-range eggs from pasture-raised chickens. Our hens enjoy plenty of space and sunshine!",
+            "image": "happy-hens.jpg",
+            "featured": false,
+            "products": ["Large Brown Eggs", "Jumbo Eggs", "Cartons of 12"],
+            "since": 2017,
+            "website": null
+        },
+        {
+            "id": 5,
+            "name": "Mountain View Cheese",
+            "category": "dairy",
+            "description": "Handcrafted cheeses made from local milk. We specialize in aged cheddars and fresh goat cheeses.",
+            "image": "mountain-view.jpg",
+            "featured": false,
+            "products": ["Aged Cheddar", "Goat Cheese", "Farmers Cheese", "Cheese Curds"],
+            "since": 2012,
+            "website": null
+        },
+        {
+            "id": 6,
+            "name": "Berry Best Farms",
+            "category": "produce",
+            "description": "Seasonal berries grown without synthetic pesticides. Pick your own available in season.",
+            "image": "berry-best.jpg",
+            "featured": false,
+            "products": ["Strawberries", "Blueberries", "Raspberries", "Blackberries"],
+            "since": 2014,
+            "website": null
+        },
+        {
+            "id": 7,
+            "name": "Heritage Pork Co.",
+            "category": "meat",
+            "description": "Pasture-raised heritage breed pork. All animals are raised humanely with no antibiotics.",
+            "image": "heritage-pork.jpg",
+            "featured": false,
+            "products": ["Pork Chops", "Bacon", "Sausage", "Ham"],
+            "since": 2016,
+            "website": null
+        },
+        {
+            "id": 8,
+            "name": "Crafted by Hand",
+            "category": "crafts",
+            "description": "Handmade pottery and woodworking items created by local artisans.",
+            "image": "crafted-by-hand.jpg",
+            "featured": false,
+            "products": ["Mugs", "Bowls", "Cutting Boards", "Serving Trays"],
+            "since": 2019,
+            "website": null
+        },
+        {
+            "id": 9,
+            "name": "Sweet Blossom Jams",
+            "category": "prepared",
+            "description": "Small-batch jams and preserves made with local fruit and minimal sugar.",
+            "image": "sweet-blossom.jpg",
+            "featured": false,
+            "products": ["Strawberry Jam", "Peach Preserves", "Apple Butter", "Hot Pepper Jelly"],
+            "since": 2015,
+            "website": null
+        },
+        {
+            "id": 10,
+            "name": "Fresh Catch Seafood",
+            "category": "meat",
+            "description": "Locally caught fish and shellfish from sustainable fisheries.",
+            "image": "fresh-catch.jpg",
+            "featured": false,
+            "products": ["Salmon", "Cod", "Clams", "Oysters"],
+            "since": 2013,
+            "website": null
+        },
+        {
+            "id": 11,
+            "name": "Garden of Eden Herbs",
+            "category": "produce",
+            "description": "Fresh and dried culinary herbs, medicinal plants, and herbal teas.",
+            "image": "garden-eden.jpg",
+            "featured": false,
+            "products": ["Basil", "Thyme", "Mint", "Lavender", "Herbal Tea Blends"],
+            "since": 2017,
+            "website": null
+        },
+        {
+            "id": 12,
+            "name": "Flour Power",
+            "category": "baked-goods",
+            "description": "Specialty cakes, cookies, and pies made to order with local ingredients.",
+            "image": "flour-power.jpg",
+            "featured": false,
+            "products": ["Custom Cakes", "Pies", "Cookies", "Brownies"],
+            "since": 2020,
+            "website": null
+        },
+        {
+            "id": 13,
+            "name": "The Wooly Sheep",
+            "category": "crafts",
+            "description": "Handspun yarn and wool products from our own flock of sheep.",
+            "image": "wooly-sheep.jpg",
+            "featured": false,
+            "products": ["Yarn", "Wool Socks", "Felted Items", "Sheepskins"],
+            "since": 2011,
+            "website": null
+        },
+        {
+            "id": 14,
+            "name": "Urban Greens",
+            "category": "produce",
+            "description": "Hydroponically grown lettuces and microgreens year-round.",
+            "image": "urban-greens.jpg",
+            "featured": false,
+            "products": ["Butterhead Lettuce", "Arugula", "Microgreens Mix", "Basil"],
+            "since": 2018,
+            "website": null
+        },
+        {
+            "id": 15,
+            "name": "Maplewood Syrup",
+            "category": "prepared",
+            "description": "Pure maple syrup tapped from our own sugar maple trees.",
+            "image": "maplewood.jpg",
+            "featured": false,
+            "products": ["Grade A Amber", "Grade A Dark", "Maple Candy", "Maple Cream"],
+            "since": 2009,
+            "website": null
+        }
+    ]
+}
