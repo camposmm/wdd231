@@ -1,5 +1,3 @@
-// main.js - Complete with all functions and proper imports
-
 import { fetchVendors } from './vendors.js';
 import { fetchEvents } from './events.js';
 import { handleForm } from './form.js';
