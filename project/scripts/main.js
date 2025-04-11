@@ -1,5 +1,5 @@
 import { fetchVendors } from './vendors.js';
-import { fetchEvents } from './events.js';
+import fetchEvents from './events.js';
 import { handleForm } from './form.js';
 
 // DOM Content Loaded
