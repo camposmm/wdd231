@@ -1,24 +1,20 @@
-import { fetchVendors } from './vendors.js';
+import { fetchVendors, displayVendors } from './vendors.js';
 import { fetchEvents } from './events.js';
 import { handleForm } from './form.js';
 
-// DOM Content Loaded
+// Main initialization when DOM loads
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('[main.js] DOM fully loaded');
+    
     // Mobile menu toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    setupMobileMenu();
     
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        menuToggle.setAttribute('aria-expanded', nav.classList.contains('active'));
-    });
-    
-    // Load featured vendors on homepage
+    // Load featured vendors if on homepage
     if (document.querySelector('#featured-vendors')) {
         loadFeaturedVendors();
     }
     
-    // Load featured events on homepage
+    // Load featured events if on homepage
     if (document.querySelector('#featured-events')) {
         loadFeaturedEvents();
     }
@@ -34,54 +30,92 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-async function loadFeaturedVendors() {
-    try {
-        const vendors = await fetchVendors();
-        const featuredVendors = vendors.filter(vendor => vendor.featured).slice(0, 3);
-        const container = document.querySelector('#featured-vendors');
-        
-        container.innerHTML = featuredVendors.map(vendor => `
-            <div class="vendor-card">
-                <img src="images/vendors/${vendor.image}" alt="${vendor.name}" loading="lazy">
-                <div class="vendor-info">
-                    <span class="vendor-category">${vendor.category}</span>
-                    <h3>${vendor.name}</h3>
-                    <p>${vendor.description.substring(0, 100)}...</p>
-                </div>
-            </div>
-        `).join('');
-    } catch (error) {
-        console.error('Error loading featured vendors:', error);
-        document.querySelector('#featured-vendors').innerHTML = 
-            '<p>Unable to load vendor information. Please try again later.</p>';
+// Mobile menu setup
+function setupMobileMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.setAttribute('aria-expanded', nav.classList.contains('active'));
+        });
     }
 }
 
+// Load and display featured vendors
+async function loadFeaturedVendors() {
+    console.log('[main.js] Loading featured vendors...');
+    
+    try {
+        const vendors = await fetchVendors();
+        const featuredVendors = vendors
+            .filter(vendor => vendor.featured)
+            .slice(0, 3);
+        
+        const container = document.querySelector('#featured-vendors');
+        if (container) {
+            container.innerHTML = featuredVendors.map(vendor => `
+                <div class="featured-vendor">
+                    <img src="../images/vendors/${vendor.image || 'default.jpg'}" 
+                         alt="${vendor.name}"
+                         loading="lazy"
+                         onerror="this.src='../images/vendors/default.jpg'">
+                    <div class="featured-vendor-info">
+                        <h3>${vendor.name}</h3>
+                        <p>${vendor.description.substring(0, 100)}...</p>
+                        <a href="/vendors#${vendor.id}" class="btn">View Details</a>
+                    </div>
+                </div>
+            `).join('');
+        }
+    } catch (error) {
+        console.error('[main.js] Error loading featured vendors:', error);
+        const container = document.querySelector('#featured-vendors');
+        if (container) {
+            container.innerHTML = '<p class="error">Featured vendors unavailable. Check back later.</p>';
+        }
+    }
+}
+
+// Load and display featured events
 async function loadFeaturedEvents() {
+    console.log('[main.js] Loading featured events...');
+    
     try {
         const events = await fetchEvents();
-        const upcomingEvents = events
+        const featuredEvents = events
             .filter(event => new Date(event.date) >= new Date())
             .sort((a, b) => new Date(a.date) - new Date(b.date))
             .slice(0, 3);
         
         const container = document.querySelector('#featured-events');
-        container.innerHTML = upcomingEvents.map(event => `
-            <div class="event-card">
-                <h3>${event.title}</h3>
-                <p><strong>${new Date(event.date).toLocaleDateString('en-US', { 
-                    weekday: 'short', month: 'short', day: 'numeric' 
-                })}</strong></p>
-                <p>${event.description.substring(0, 100)}...</p>
-            </div>
-        `).join('');
+        if (container) {
+            container.innerHTML = featuredEvents.map(event => `
+                <div class="featured-event">
+                    <h3>${event.title}</h3>
+                    <p class="event-date">
+                        ${new Date(event.date).toLocaleDateString('en-US', { 
+                            weekday: 'short', 
+                            month: 'short', 
+                            day: 'numeric' 
+                        })}
+                    </p>
+                    <p>${event.description.substring(0, 100)}...</p>
+                    <a href="/events#${event.id}" class="btn">Event Details</a>
+                </div>
+            `).join('');
+        }
     } catch (error) {
-        console.error('Error loading featured events:', error);
-        document.querySelector('#featured-events').innerHTML = 
-            '<p>Unable to load event information. Please try again later.</p>';
+        console.error('[main.js] Error loading featured events:', error);
+        const container = document.querySelector('#featured-events');
+        if (container) {
+            container.innerHTML = '<p class="error">Event information currently unavailable.</p>';
+        }
     }
 }
 
+// Update seasonal highlights
 function updateSeasonalHighlights() {
     const month = new Date().getMonth();
     const highlights = document.querySelector('#seasonal-highlights');
@@ -101,6 +135,7 @@ function updateSeasonalHighlights() {
         11: 'Storage crops and greenhouse greens'
     };
     
-    highlights.textContent = seasonalProduce[month];
-    localStorage.setItem('seasonalHighlights', seasonalProduce[month]);
+    if (highlights) {
+        highlights.textContent = seasonalProduce[month] || 'Fresh local produce available year-round';
+    }
 }
