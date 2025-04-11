@@ -1,10 +1,19 @@
-import { fetchVendors, displayVendors } from './vendors.js';
+import { fetchVendors, initVendors } from './vendors.js';
+
+// Either use specific functions
+const vendors = await fetchVendors();
+
+// Or initialize the whole system
+initVendors();
 import { fetchEvents } from './events.js';
 import { handleForm } from './form.js';
 
 // Main initialization when DOM loads
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('[main.js] DOM fully loaded');
+import { fetchVendors } from './vendors.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const vendors = await fetchVendors();
+  console.log('Loaded vendors:', vendors);
     
     // Mobile menu toggle
     setupMobileMenu();
