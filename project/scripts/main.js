@@ -1,3 +1,5 @@
+// main.js - Complete with all functions and proper imports
+
 import { fetchVendors } from './vendors.js';
 import { fetchEvents } from './events.js';
 import { handleForm } from './form.js';
@@ -60,11 +62,12 @@ async function loadFeaturedVendors() {
 async function loadFeaturedEvents() {
     try {
         const events = await fetchEvents();
-        const upcomingEvents = events.filter(event => new Date(event.date) >= new Date())
-                                   .sort((a, b) => new Date(a.date) - new Date(b.date))
-                                   .slice(0, 3);
-        const container = document.querySelector('#featured-events');
+        const upcomingEvents = events
+            .filter(event => new Date(event.date) >= new Date())
+            .sort((a, b) => new Date(a.date) - new Date(b.date))
+            .slice(0, 3);
         
+        const container = document.querySelector('#featured-events');
         container.innerHTML = upcomingEvents.map(event => `
             <div class="event-card">
                 <h3>${event.title}</h3>
@@ -101,7 +104,5 @@ function updateSeasonalHighlights() {
     };
     
     highlights.textContent = seasonalProduce[month];
-    
-    // Store in localStorage for performance
     localStorage.setItem('seasonalHighlights', seasonalProduce[month]);
 }

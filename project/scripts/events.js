@@ -1,21 +1,4 @@
-// events.js - Fixed implementation
-
-// Sample event data structure (ensure your events.json matches this)
-/*
-{
-    "events": [
-        {
-            "id": 1,
-            "title": "Cooking Demo",
-            "description": "Learn to cook seasonal dishes",
-            "date": "2023-06-15", // YYYY-MM-DD format
-            "time": "10:00 AM",
-            "location": "Main Stage",
-            "category": "workshop"
-        }
-    ]
-}
-*/
+// events.js - Complete with all functions and proper exports
 
 // DOM Elements
 const calendarGrid = document.getElementById('calendar');
@@ -46,28 +29,18 @@ async function fetchEvents() {
 // Initialize calendar
 async function initCalendar() {
     const events = await fetchEvents();
-    
-    // Render calendar
     renderCalendar(currentDate, events);
-    
-    // Display all upcoming events
     displayUpcomingEvents(events);
-    
-    // Display workshops (events with category "workshop")
     displayWorkshops(events);
 }
 
 // Render calendar grid
 function renderCalendar(date, events) {
-    // Clear previous calendar
     calendarGrid.innerHTML = '';
-    
-    // Set month/year heading
     currentMonthEl.textContent = date.toLocaleDateString('en-US', { 
         month: 'long', year: 'numeric' 
     });
     
-    // Get first/last days of month
     const firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
     const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
     const daysInMonth = lastDay.getDate();
@@ -106,7 +79,7 @@ function createDayElement(day, currentMonth, events) {
         dayElement.classList.add('today');
     }
     
-    // Check for events on this day
+    // Check for events
     const dateStr = formatDateString(currentMonth.getFullYear(), currentMonth.getMonth() + 1, day);
     const dayEvents = events.filter(event => event.date === dateStr);
     
@@ -202,3 +175,6 @@ nextMonthBtn.addEventListener('click', () => {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', initCalendar);
+
+// Export the functions needed by other modules
+export { fetchEvents, initCalendar };
