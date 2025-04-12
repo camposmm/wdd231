@@ -5,11 +5,6 @@ const vendors = await fetchVendors();
 
 // Or initialize the whole system
 initVendors();
-import { fetchEvents } from './events.js';
-import { handleForm } from './form.js';
-
-// Main initialization when DOM loads
-import { fetchVendors } from './vendors.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   const vendors = await fetchVendors();
